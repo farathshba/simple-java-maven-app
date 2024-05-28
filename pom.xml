@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app</artifactId>
+  <artifactId>my-app-2</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>my-app</name>
+  <name>my-app-2</name>
   <url>https://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -18,7 +18,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Optional URL to server. Default value is http://localhost:9000 -->
-    <sonar.host.url>https://farath.ngrok.io</sonar.host.url>
+    <sonar.host.url>http://localhost:9000/</sonar.host.url>
   </properties>
   <build>
     <pluginManagement>
@@ -27,6 +27,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
