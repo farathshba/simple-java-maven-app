@@ -8,7 +8,8 @@ import java.io.IOException;
 public class App {
 
     private static final String MESSAGE = "Hello World!";
-
+    private static final String feature1 = "This is branch feature-1";
+    
     public App() {}
 
     public static void main(String[] args) {
